@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 隐藏默认Title. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- 默认文本颜色 -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!-- 默认按钮颜色 -->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 启动页面 Theme -->
+    <style name="LaunchActivityTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="BookDetailsActivityTheme" parent="AppTheme">
+    </style>
+
+
+    <!-- PopupWindow 渐变进出动画 -->
+    <style name="ActionPopupWindowAlpha" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_alpha_out</item>
+    </style>
+
+    <!-- 图书封面 -->
+    <style name="bookCover">
+        <item name="android:layout_width">@dimen/book_cover_width</item>
+        <item name="android:layout_height">@dimen/book_cover_height</item>
+    </style>
+
+    <!-- 图书详情封面 -->
+    <style name="bookDetailsCover">
+        <item name="android:layout_width">@dimen/book_details_cover_width</item>
+        <item name="android:layout_height">@dimen/book_details_cover_height</item>
+    </style>
+
+    <style name="BaseDiaLog" parent="Theme.AppCompat.Light.Dialog"></style>
+
+    <style name="BaseAlterDiaLog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <!-- PopupWindow TOP进出动画 -->
+    <style name="ActionPopupWindowTop" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_top_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_top_out</item>
+    </style>
+
+    <!-- PopupWindow BOTTOM进出动画 -->
+    <style name="ActionPopupWindowBottom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_bottom_out</item>
+    </style>
+
+    <!-- PopupWindow LEFT进出动画 -->
+    <style name="ActionPopupWindowLeft" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_left_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_left_out</item>
+    </style>
+
+</resources>

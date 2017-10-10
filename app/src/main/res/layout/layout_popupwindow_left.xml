@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLeftBackRlyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/mLeftBackImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/mLeftBackImg"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mLeftTitleTv"
+            android:gravity="center"
+            android:text="目录"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="left" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ExpandableListView
+                android:id="@+id/mLeftCatalogueLv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+            </ExpandableListView>
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

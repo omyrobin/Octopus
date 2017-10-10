@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/vi_spacing_strip"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:drawableLeft="@drawable/shape_search_group_left"
+        android:drawablePadding="10dp"
+        android:id="@+id/tv_book_directory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vi_spacing_strip"
+        android:padding="@dimen/app_padding"
+        android:text="@string/directory"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_book_chapter_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_book_directory"
+        android:paddingLeft="@dimen/app_padding"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_book_chapter_updatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_book_chapter_number"
+        android:paddingLeft="@dimen/app_padding"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="@dimen/app_padding" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/app_padding"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_arrows_right_gray" />
+
+</RelativeLayout>

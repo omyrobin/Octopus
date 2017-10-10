@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingBottom="50dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="@color/colorDivider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/select_login"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1px"
+            android:layout_gravity="center"
+            android:background="@color/colorDivider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/img_wx_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/weixin_icon" />
+
+        <ImageView
+            android:id="@+id/img_sina_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/weibo_icon" />
+        
+        <ImageView
+            android:id="@+id/img_qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/qq_icon" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/mReadModeRlyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/verticl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:paddingLeft="15dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/verticl_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true" />
+
+    <View
+        android:id="@+id/mControlPanelView"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mControlPayView"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mControlBatchPayView"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mControlAutoPayView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:textColor="@color/textColorPrimary" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/mPlanLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/mPlanTv"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/textColorPrimary"
+            android:text="第五百四十三章  这是一个章节的标题的章节名的"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"/>
+        
+        <ImageButton
+            android:id="@+id/mPlanBackImgBtn"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="#111111"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

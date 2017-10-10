@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/vi_spacing_strip"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:id="@+id/tv_bookdetails_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vi_spacing_strip"
+        android:drawableLeft="@drawable/shape_search_group_left"
+        android:drawablePadding="10dp"
+        android:paddingLeft="@dimen/app_padding"
+        android:paddingTop="@dimen/app_padding"
+        android:paddingBottom="10dp"
+        android:text="@string/bookdetails_like"
+        android:textStyle="bold"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="15sp" />
+
+    <GridLayout
+        android:layout_marginLeft="8dp"
+        android:id="@+id/gl_bookdetails_like"
+        android:rowCount="2"
+        android:columnCount="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </GridLayout>
+
+</LinearLayout>

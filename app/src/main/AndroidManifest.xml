@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jinying.octopus"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+
+    <!-- 不需要动态申请的权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 需要动态申请的权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher_app"
+        android:supportsRtl="true"
+        android:label="章鱼阅读"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name=".launch.LaunchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LaunchActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".home.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".search.SearchActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".bookmall.neworend.NewEndListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".bookmall.rankdetail.RankDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".bookmall.classifydetail.ClassifyDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".user.UserActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".user.login.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".user.register.RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".bookmall.webactivity.WebActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".read.ui.ReadActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:theme="@style/BookDetailsActivityTheme"
+            android:screenOrientation="portrait"
+            android:name=".bookdetails.BookDetailsActivity">
+        </activity>
+
+        <activity android:name=".read.end.KeepGoActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+        </activity>
+
+        <!-- 微信接受消息页 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@style/AppTheme.Translucent"
+            android:label="@string/app_name"
+            android:exported="true" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106290423" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <meta-data android:value="59afc5d7a40fa3282b000d61" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="TEST" android:name="UMENG_CHANNEL"/>
+
+    </application>
+
+</manifest>

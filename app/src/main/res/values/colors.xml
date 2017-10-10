@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#60B7FA</color>
+    <color name="colorPrimaryDark">#60B7FA</color>
+    <color name="colorAccent">#60B7FA</color>
+    <color name="textColorPrimary">#3B3B40</color>
+    <color name="textColorSecondary">#757580</color>
+    <color name="colorLine">#91919E</color>
+    <!-- 书架添加图书背景 -->
+    <color name="colorAddBook">#EFF7FE</color>
+    <color name="colorDeleteBg">#E5E5E5</color>
+
+    <color name="colorIndicatorBg">#E8E8EB</color>
+    <!-- 我的分割线 -->
+    <color name="colorDivider">#DFDFE3</color>
+
+    <color name="colorBookMallBg">#33FFFFFF</color>
+    <color name="colorBookShelfBanner">#EFF7FE</color>
+    <color name="colorHint">#EEEEEE</color>
+
+    <color name="colorSearch">#B5E1FE</color>
+
+    <!-- 夜间模式颜色 -->
+    <color name="night_dialogbg_color">#463C37</color>
+    <color name="night_whitetext_color">#DFD7D2</color>
+    <color name="textColorNight">#6B5D54</color>
+    <color name="night_txt_bg">#2D2A28</color>
+    <color name="night_novelvote_bg">#161615</color>
+    <color name="night_username_color">#9B8E86</color>
+    <color name="night_commentcontent_color">#6B5D54</color>
+    <color name="night_commenttime_color">#59514B</color>
+    <color name="night_titlelie_color">#59514B</color>
+    <color name="night_edittextlayout_color">#9B8E86</color>
+
+    <color name="not_download">#969696</color>
+    <!-- 小说Aa文字极限状态 -->
+    <color name="textColorEnable">#CDCDCD</color>
+
+    <!-- 小说阅读背景颜色 -->
+    <color name="colorBgLightGray">#F5F5F5</color>
+    <color name="colorBgYellow">#F3E7CF</color>
+    <color name="colorBgGreen">#C7E5CE</color>
+    <color name="colorBgBlue">#CEE0F1</color>
+
+    <!-- 夜间模式颜色 -->
+    <color name="textColorTitleNight">#757580</color>
+    <color name="colorControlNight">#333333</color>
+    <color name="colorIndicatorLightNight">#757580</color>
+    <color name="colorIndicatorDarkNight">#B4B4BF</color>
+    <!-- 日间模式颜色 -->
+    <color name="textColorTitle">#B4B4BF</color>
+    <color name="colorIndicatorLight">#DEDEE3</color>
+    <color name="colorIndicatorDark">#757580</color>
+
+</resources>

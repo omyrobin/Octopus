@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@drawable/shape_bookmall_bg"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/bookmal_title_width"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_bookmall_indicator"
+                    android:background="@drawable/shape_bookmall_title"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="7dp"
+                    android:text="@string/bookmall_male"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_bookmall_male"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="7dp"
+                    android:text="@string/bookmall_male"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_bookmall_female"
+                    android:layout_toRightOf="@id/tv_bookmall_male"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="7dp"
+                    android:text="@string/bookmall_female"
+                    android:textColor="@android:color/white"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/img_toolbar_search"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_search_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/fl_progress_parent"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@null" >
+
+            <View
+                android:id="@+id/progress_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/shape_webview_progress_bar" />
+        </FrameLayout>
+
+        <WebView
+            android:id="@+id/wb_bookmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

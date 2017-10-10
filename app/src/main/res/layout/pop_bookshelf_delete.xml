@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorDeleteBg">
+
+    <RelativeLayout
+        android:padding="@dimen/app_padding"
+        android:layout_centerVertical="true"
+        android:id="@+id/rl_bookshelf_select_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chk_bookshelf_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_delete_checkbox"
+            android:clickable="false"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/chk_bookshelf_select_all"
+            android:text="@string/select_all" />
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:padding="@dimen/app_padding"
+        android:layout_centerVertical="true"
+        android:id="@+id/rl_bookshelf_delete_parent"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bookshelf_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_bookshelf_delete" />
+
+        <TextView
+            android:layout_toRightOf="@id/img_bookshelf_delete"
+            android:id="@+id/tv_bookshelf_delete"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/delete" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- 启动页面 Theme -->
+    <style name="LaunchActivityTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="BookDetailsActivityTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

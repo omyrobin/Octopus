@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="actionbarSize">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Toolbar中标题文字大小 -->
+    <dimen name="toolbar_title_textsize">18sp</dimen>
+
+    <dimen name="mine_userface_width">60dp</dimen>
+    <dimen name="mine_userface_height">60dp</dimen>
+
+    <dimen name="bookshelf_gridbook_width">90dp</dimen>
+    <dimen name="bookshelf_gridbook_height">118dp</dimen>
+
+    <dimen name="bookmal_title_width">100dp</dimen>
+    <dimen name="bookshelf_margin">15dp</dimen>
+
+    <dimen name="app_padding">15dp</dimen>
+
+    <dimen name="book_cover_width">76dp</dimen>
+    <dimen name="book_cover_height">100dp</dimen>
+
+    <dimen name="book_details_cover_width">90dp</dimen>
+    <dimen name="book_details_cover_height">118dp</dimen>
+    <dimen name="book_details_name_textsize">18sp</dimen>
+
+    <dimen name="book_name_textsize">18sp</dimen>
+    <dimen name="book_actor_textsize">12sp</dimen>
+    <dimen name="book_brief_textsize">13sp</dimen>
+
+    <dimen name="tag_padding">10dp</dimen>
+    <dimen name="user_margin">40dp</dimen>
+
+    <dimen name="user_userface_width">100dp</dimen>
+    <dimen name="user_userface_height">100dp</dimen>
+</resources>

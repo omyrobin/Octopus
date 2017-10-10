@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.jinying.octopus"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary= true
+    }
+
+    buildTypes {
+        debug {
+            // debug模式下，显示log
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+            // 不开启混淆
+            minifyEnabled false
+            // 不开启ZipAlign优化
+            zipAlignEnabled false
+            // 不移除无用的resource文件
+            shrinkResources false
+        }
+        release {
+            // release模式下，不显示log
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            // 开启混淆
+            minifyEnabled true
+            // 开启ZipAlign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            // 混淆文件位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:support-vector-drawable:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.okio:okio:1.9.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.google.guava:guava-base:r03'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.apache.httpcomponents:httpcore:4.4.4'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/open_sdk_r5793_lite.jar')
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toolbar_title_textsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/et_register_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="@string/nick_name"
+        android:maxLength="8"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorSecondary"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/app_padding"
+            android:drawableRight="@drawable/shape_phonenumber_center"
+            android:padding="@dimen/app_padding"
+            android:text="@string/phone_header"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_register_phongnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="@dimen/app_padding"
+            android:singleLine="true"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/app_padding"
+        android:layout_marginRight="@dimen/app_padding"
+        android:background="@color/colorDivider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <EditText
+            android:id="@+id/et_register_authcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:hint="@string/auth_code"
+            android:padding="@dimen/app_padding"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="15sp" />
+
+        <com.jinying.octopus.view.TimerButton
+            android:id="@+id/btn_register_authcode"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_time_button"
+            android:paddingLeft="@dimen/app_padding"
+            android:paddingRight="@dimen/app_padding"
+            android:text="@string/get_auth_code"
+            android:textColor="@color/selector_time_button_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/app_padding"
+            android:layout_marginRight="@dimen/app_padding"
+            android:layout_toLeftOf="@id/btn_register_authcode"
+            android:background="@color/colorDivider"
+            android:inputType="phone" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_register_newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="@string/new_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/app_padding"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorSecondary"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorDivider" />
+
+    <EditText
+        android:id="@+id/et_register_affirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/app_padding"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorSecondary"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:id="@+id/tv_register_finish"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_btn_bule"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/finish"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <include layout="@layout/include_login_type" />
+
+</LinearLayout>

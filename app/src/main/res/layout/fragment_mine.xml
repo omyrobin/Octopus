@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:background="@drawable/bg_mine_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_userparent"
+                    android:layout_width="@dimen/mine_userface_width"
+                    android:layout_height="@dimen/mine_userface_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp" >
+
+                    <ImageView
+                        android:id="@+id/img_mine_userface"
+                        android:layout_width="@dimen/mine_userface_width"
+                        android:layout_height="@dimen/mine_userface_height"
+                        android:src="@drawable/ic_mine_userface"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mine_userface_translucence"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:src="@drawable/btn_mine_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_mine_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_mine_userparent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_mine_login_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_mine_username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:text="@string/mine_go_to_login"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <com.jinying.octopus.widget.rowview.ContainerView
+                android:id="@+id/custom_containerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.jinying.octopus.widget.rowview.ContainerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

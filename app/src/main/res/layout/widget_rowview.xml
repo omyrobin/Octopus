@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/mWidgetRowIconImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/mWidgetRowLableTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:textColor="@color/textColorPrimary"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/mWidgetRowMoneyTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingRight="10dp"
+        android:textColor="@color/textColorPrimary" />
+
+    <ImageButton
+        android:id="@+id/mWidgetActionImgBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@null" 
+        android:layout_gravity="right|center_vertical" />
+
+</LinearLayout>

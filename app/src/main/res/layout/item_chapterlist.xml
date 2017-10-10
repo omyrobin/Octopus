@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mChapterListRlyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:padding="@dimen/app_padding"
+        android:layout_marginLeft="15dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/mChapterListNumTv" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_toLeftOf="@+id/mChapterIsPayTv"
+        android:textColor="@color/textColorSecondary"/>
+    
+    <TextView 
+        android:padding="@dimen/app_padding"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/app_padding"
+        android:id="@+id/mChapterIsPayTv" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/textColorPrimary"/>
+    
+    <View
+        android:id="@+id/mChapterListDivider"
+        android:layout_below="@id/mChapterListNumTv"
+        android:background="@color/colorDivider"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</RelativeLayout>

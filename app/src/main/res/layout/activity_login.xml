@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_gravity="center"
+            android:textSize="@dimen/toolbar_title_textsize"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_login_phongnumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@null"
+        android:hint="@string/pls_input_phone_number"
+        android:maxLength="11"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorSecondary"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/mLogin1view"
+        android:layout_below="@id/et_login_phongnumber"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/user_margin"
+        android:layout_marginRight="@dimen/user_margin"
+        android:background="@color/colorDivider" />
+
+    <EditText
+        android:layout_below="@id/mLogin1view"
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/user_margin"
+        android:layout_marginRight="@dimen/user_margin"
+        android:background="@null"
+        android:hint="@string/pls_input_login_password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorSecondary"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/mLogin2view"
+        android:layout_below="@id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/user_margin"
+        android:layout_marginRight="@dimen/user_margin"
+        android:background="@color/colorDivider" />
+    
+    <TextView
+        android:layout_below="@id/mLogin2view"
+        android:id="@+id/tv_login_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/user_margin"
+        android:layout_marginRight="@dimen/user_margin"
+        android:background="@drawable/shape_btn_bule"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/finish"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    
+    <TextView 
+        android:id="@+id/tv_login_register"
+        android:layout_below="@id/tv_login_finish"
+        android:layout_alignLeft="@id/tv_login_finish"
+        android:text="@string/register_account_number"
+        android:paddingTop="10dp"
+        android:textColor="@color/textColorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:id="@+id/tv_login_find_password"
+        android:layout_below="@id/tv_login_finish"
+        android:layout_alignRight="@id/tv_login_finish"
+        android:text="@string/find_to_password"
+        android:paddingTop="10dp"
+        android:textColor="@color/textColorSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <include layout="@layout/include_login_type"/>
+
+</RelativeLayout>

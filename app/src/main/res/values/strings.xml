@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Octopus</string>
+    <string name="tab_bookshelf">书架</string>
+    <string name="tab_bookmall">书城</string>
+    <string name="tab_mine">我的</string>
+
+
+    <string name="network_is_not_available">网络不可用</string>
+    <string name="request_failed">请求失败，请稍后再试...</string>
+    <string name="mine_go_to_login"><![CDATA[去登录吧，记录阅读点滴 >]]></string>
+    <string name="bookmall_male">男生</string>
+    <string name="bookmall_female">女生</string>
+
+    <string name="hint">提示</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="permission_denied_write">该功能需要开启读写手机存储权限</string>
+
+    <string name="search_hint">搜索书名、书号、作者</string>
+    <string name="search_result">搜索结果</string>
+
+    <string name="book_details_tag">标签</string>
+    <string name="directory">目录</string>
+    <string name="add_bookshelf">加入书架</string>
+    <string name="begin_reading">开始阅读</string>
+    <string name="serialize">连载至%s</string>
+    <string name="updated">更新于</string>
+    <string name="bookdetails_like">猜你喜欢</string>
+
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="find_pass_word">忘记密码</string>
+    <string name="more">更多</string>
+    <string name="nick_name">请输入昵称</string>
+    <string name="phone_number">手机号码</string>
+    <string name="auth_code">验证码</string>
+    <string name="get_auth_code">获取验证码</string>
+    <string name="new_password">新密码&#160;&#160;&#160;(字母和数字不少于6位)</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="finish">完成</string>
+    <string name="phone_header">+86</string>
+    <string name="select_login">选择登录方式</string>
+    <string name="pls_sync">请登录，同步您的阅读和购买记录</string>
+    <string name="pls_input_phone_number">请输入您的手机号码</string>
+    <string name="pls_input_login_password">请输入登录密码</string>
+    <string name="register_account_number">注册账号</string>
+    <string name="find_to_password">找回密码</string>
+    <string name="username_null">用户名不能为空</string>
+    <string name="password_null">密码不能为空</string>
+    <string name="true_phone_number">请输入正确的手机号码</string>
+    <string name="true_auth_code">您输入的验证码有误</string>
+    <string name="password_minlength">密码不能少于六位</string>
+    <string name="consistent_password">两次输入的密码不一致,请重新输入</string>
+    <string name="register_success">注册成功</string>
+    <string name="change_success">修改成功</string>
+    <string name="login_success">登录成功</string>
+
+    <string name="user_name_null">名字不可以不填哦!</string>
+    <string name="paragraph">&#8195;&#8195;</string>
+    <string name="novel_details">书籍详情</string>
+
+    <string name="text_size_down">A-</string>
+    <string name="text_size_up">A+</string>
+    <string name="page_turning">翻页</string>
+    <string name="simulation">仿真</string>
+    <string name="smoothness">平滑</string>
+    <string name="updown">上下</string>
+    <string name="system">系统</string>
+    <string name="the_volume_button_to_read">音量键阅读</string>
+    <string name="night">夜间</string>
+    <string name="pop_bottom_brightness">亮度</string>
+    <string name="pop_bottom_textsize">字号</string>
+    <string name="pop_bottom_interval">间距</string>
+    <string name="screen_orientation">横竖屏</string>
+    <string name="no_book_data">该分类下没有小说数据</string>
+
+    <string name="already_add_bookshelf">"已加入书架"</string>
+
+    <string name="no_have_net_connection">未检测到网络连接,请检查您的网络</string>
+    <string name="delete">删除</string>
+    <string name="select_all">全选</string>
+
+    <string name="delete_book">确定删除这%s本书吗？</string>
+
+    <!-- 第三方相关  -->
+    <string name="err_auth_denied">用户拒绝授权</string>
+    <string name="err_user_cancel">用户取消授权</string>
+    <string name="authorization_success">授权成功</string>
+    <string name="authorization_failure">授权失败</string>
+
+    <!-- 意见反馈 -->
+    <string name="advise_set">意见反馈</string>
+    <string name="advise_hint">想对章鱼阅读说点什么!</string>
+    <string name="advise_is_empty">反馈内容不能为空!</string>
+    <string name="contactway_is_empty">联系方式不能为空!</string>
+    <string name="advise_success">反馈成功！感谢您的意见！</string>
+
+    <!-- KeepGoActivity -->
+    <string name="hard_to_write">作者努力码字中</string>
+    <string name="guess_you_like">猜你喜欢</string>
+    <string name="subsequent_chapters">后续章节敬请期待\n\n...</string>
+</resources>
